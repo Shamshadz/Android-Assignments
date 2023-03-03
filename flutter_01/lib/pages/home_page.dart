@@ -10,9 +10,7 @@ class HomePage extends StatelessWidget {
         title: Text("Catalog App"),
       ),
       body: Center(
-        child: Container(
-          child: Text("welcome to flutter"),
-        ),
+        child: Text("welcome to flutter"),
       ),
       drawer: Drawer(),
     );
