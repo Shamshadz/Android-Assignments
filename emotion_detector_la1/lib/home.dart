@@ -40,6 +40,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   runModel() async {
     if (cameraImage != null) {
+      print("entered in 43 line ############");
       var predictions = await Tflite.runModelOnFrame(
           bytesList: cameraImage!.planes.map((plane) {
             return plane.bytes;
@@ -54,9 +55,11 @@ class _MyHomePageState extends State<MyHomePage> {
           asynch: true);
       predictions!.forEach((element) {
         setState(() {
-          output = element['lablel'];
+          output = element['label'];
         });
       });
+    } else {
+      print("error at 63");
     }
   }
 
