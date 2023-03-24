@@ -7,6 +7,7 @@ List<CameraDescription>? cameras;
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   cameras = await availableCameras();
+
   runApp(const MyApp());
 }
 
