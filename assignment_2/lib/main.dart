@@ -89,7 +89,7 @@ class _ProfileState extends State<Profile> {
                     Text(
                       'Shamshad Choudhary',
                       style: TextStyle(
-                        fontSize: 40.0,
+                        fontSize: 35.0,
                         color: Colors.teal,
                         fontWeight: FontWeight.bold,
                       ),
